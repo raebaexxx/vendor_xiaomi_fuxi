@@ -9142,7 +9142,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "hw",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
