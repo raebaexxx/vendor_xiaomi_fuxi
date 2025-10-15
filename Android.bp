@@ -9239,7 +9239,6 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.camera.postproc@1.0-service-impl",
                 "libcamlog",
                 "libc",
-                "libui-v34",
                 "libm",
                 "libdl",
             ],
