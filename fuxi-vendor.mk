@@ -444,6 +444,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartyrawsupernightyuv_ext.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartyrawsupernightyuv_ext.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartysnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartysnapshot.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomiSceneDetection.xml \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/sky_segmentation_qat.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/sky_segmentation_qat.dlc \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/snsc.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/snsc.bin \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/snsc_params.json:$(TARGET_COPY_OUT_ODM)/etc/camera/snsc_params.json \
@@ -478,7 +479,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/videofilter/164_FC400.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/164_FC400.png \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/videofilter/165_C50D.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/165_C50D.png \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/videofilter/166_F50.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/166_F50.png \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_ODM)/etc/camera/vidhance_calibration \    vendor/xiaomi/fuxi/proprietary/odm/etc/cit_camera_resolution.json:$(TARGET_COPY_OUT_ODM)/etc/cit_camera_resolution.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_ODM)/etc/camera/vidhance_calibration \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/cit_camera_resolution.json:$(TARGET_COPY_OUT_ODM)/etc/cit_camera_resolution.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/cit_param_config.json:$(TARGET_COPY_OUT_ODM)/etc/cit_param_config.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/df_default.xml:$(TARGET_COPY_OUT_ODM)/etc/df_default.xml \
     vendor/xiaomi/fuxi/proprietary/odm/etc/disp0/mdss_dsi_m3_38_0c_0a_dsc_cmd/clstc/ClstcLut0.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/mdss_dsi_m3_38_0c_0a_dsc_cmd/clstc/ClstcLut0.txt \
