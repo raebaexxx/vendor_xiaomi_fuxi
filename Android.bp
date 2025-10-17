@@ -99,6 +99,38 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.quickcamera@1.0-impl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcutils",
+                "libhidlbase",
+                "libhardware",
+                "vendor.xiaomi.hardware.quickcamera@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libPlatformValidatorShared",
     owner: "xiaomi",
     strip: {
@@ -781,6 +813,36 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libquickcamera",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libquickcamera.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libhidlbase",
+                "libcutils",
+                "vendor.xiaomi.hardware.quickcamera@1.0",
+                "vendor.xiaomi.hardware.quickcamera@1.0-impl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqvr_cam_cdsp_driver_stub",
     owner: "xiaomi",
     strip: {
@@ -1104,6 +1166,34 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.quickcamera@1.0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.xiaomi.hardware.quickcamera@1.0.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -6385,6 +6475,43 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "com.xiaomi.plugin.deflicker",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.deflicker.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamera_metadata",
+                "libcom.xiaomi.pluginutils",
+                "libcom.xiaomi.metadatautils",
+                "libcom.xiaomi.debug",
+                "libcom.xiaomi.mawutilsold",
+                "libui",
+                "libceres",
+                "libmpbase",
+                "libdeflickerNM",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/plugins",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.xiaomi.plugin.depurple",
     owner: "xiaomi",
     strip: {
@@ -10920,6 +11047,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+<<<<<<< HEAD
     name: "com.xiaomi.plugin.deflicker",
     owner: "xiaomi",
     strip: {
@@ -10957,6 +11085,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+=======
+>>>>>>> d913bfb (fuxi: Add more camera related blobs)
     name: "libdeflickerNM",
     owner: "xiaomi",
     strip: {
@@ -14321,6 +14451,35 @@ cc_prebuilt_library_shared {
                 "libcom.xiaomi.debug",
                 "libcom.xiaomi.eventcallback",
                 "vendor.xiaomi.hardware.bgservice@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.campostproc@1.0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.xiaomi.hardware.campostproc@1.0.so",
+            ],
+            shared_libs: [
+                "android.hardware.camera.common@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
