@@ -11047,46 +11047,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-<<<<<<< HEAD
-    name: "com.xiaomi.plugin.deflicker",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.deflicker.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libcamera_metadata",
-                "libcom.xiaomi.pluginutils",
-                "libcom.xiaomi.metadatautils",
-                "libcom.xiaomi.debug",
-                "libcom.xiaomi.mawutilsold",
-                "libui",
-                "libceres",
-                "libmpbase",
-                "libdeflickerNM",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/plugins",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-=======
->>>>>>> d913bfb (fuxi: Add more camera related blobs)
     name: "libdeflickerNM",
     owner: "xiaomi",
     strip: {
