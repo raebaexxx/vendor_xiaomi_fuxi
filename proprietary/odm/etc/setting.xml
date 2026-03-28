@@ -120,10 +120,10 @@
 
         <!-- IEC test -->
         <scenario id="500" defined="0 0 0 0 0 0 0 0 98 0 0" name="hp-normal" />
-        <scenario id="520" defined="3 0 98 99 0 99 99 0 98 0 0" name="hp-game" />
-        <scenario id="520" defined="6 0 98 99 0 99 99 0 98 0 0" name="hp-game" />
-        <scenario id="520" defined="10 0 98 99 0 99 99 0 98 0 0" name="hp-game" />
-        <scenario id="520" defined="16 0 98 99 0 99 99 0 98 0 0" name="hp-game" />
+        <scenario id="501" defined="3 0 98 99 0 99 99 0 98 0 0" name="hp-game" />
+        <scenario id="501" defined="6 0 98 99 0 99 99 0 98 0 0" name="hp-game" />
+        <scenario id="501" defined="10 0 98 99 0 99 99 0 98 0 0" name="hp-game" />
+        <scenario id="501" defined="16 0 98 99 0 99 99 0 98 0 0" name="hp-game" />
 
         <!-- cgame-->
         <scenario id="700" defined="0 0 98 99 0 0 0 99 99 1 1" name="cgame" />

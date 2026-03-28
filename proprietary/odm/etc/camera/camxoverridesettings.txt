@@ -76,6 +76,7 @@ bokehFallbackLuxThreshold0=453:413|445:405|453:413
 #Leica Authentic - uw_in:uw_out|wide_in:wide_out|tele_in:tele_out
 bokehFallbackLuxThreshold1=453:413|445:405|453:413
 BokehRemosaicLuxGain=95
+SDK_LOG_LEVEL=4
 
 #Smart FOV
 #1st  number: pointNumber
@@ -108,6 +109,15 @@ VideoBokehConfigurations=1@5@30|1@6@30|2@5@30|2@6@30|3@5@30|3@6@30|4@5@30|4@6@30
 #Bit[4] - UI SuperNight support default not support
 #Bit[5] - algo SuperNight support default on
 isPortraitRepairSupportMask=0x26
+
+# 12G portrait repair
+#Bit[0] - UI SAT support default not support
+#Bit[1] - algo SAT support default on
+#Bit[2] - UI Bokeh support default not support
+#Bit[3] - algo Bokeh support default on
+#Bit[4] - UI SuperNight support default not support
+#Bit[5] - algo SuperNight support default on
+isLargeRamPortraitRepairSupportMask=0x2e
 
 #enablemimovie
 isVideoMimovieSupported=TRUE
@@ -448,3 +458,9 @@ crcErrorDivisor=100
 
 # Exif
 DisplayLeicaStyle=TRUE
+
+LoadTuningDataManagerAsync=TRUE
+sensorModuleNumber=4
+
+WatermarkVersion=3.002
+FilterVersion=3.002

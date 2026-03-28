@@ -4,7 +4,6 @@
 
 soong_namespace {
     imports: [
-        "device/xiaomi/fuxi",
         "device/xiaomi/sm8550-common",
         "hardware/qcom-caf/sm8550",
         "hardware/xiaomi",
@@ -85,38 +84,6 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libfmq",
                 "libgralloctypes",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.hardware.quickcamera@1.0-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbase",
-                "libutils",
-                "libcutils",
-                "libhidlbase",
-                "libhardware",
-                "vendor.xiaomi.hardware.quickcamera@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -813,36 +780,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libquickcamera",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libquickcamera.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libhidlbase",
-                "libcutils",
-                "vendor.xiaomi.hardware.quickcamera@1.0",
-                "vendor.xiaomi.hardware.quickcamera@1.0-impl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqvr_cam_cdsp_driver_stub",
     owner: "xiaomi",
     strip: {
@@ -910,7 +847,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libnativewindow",
-                "libui-v34",
+                "libui",
                 "libc++",
                 "libc",
                 "libm",
@@ -920,7 +857,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    check_elf_files: false,
     soc_specific: true,
 }
 
@@ -1184,36 +1120,8 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.hardware.quickcamera@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.xiaomi.hardware.quickcamera@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
 prebuilt_rfsa {
-    name: "bm3a68v08s11n29",
+    name: "vendor_lib_rfsa_adsp_bm3a68v08s11n29_bin",
     filename: "bm3a68v08s11n29.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n29.bin",
@@ -1222,7 +1130,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a68v08s11n30",
+    name: "vendor_lib_rfsa_adsp_bm3a68v08s11n30_bin",
     filename: "bm3a68v08s11n30.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n30.bin",
@@ -1231,7 +1139,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a68v08s11n35",
+    name: "vendor_lib_rfsa_adsp_bm3a68v08s11n35_bin",
     filename: "bm3a68v08s11n35.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n35.bin",
@@ -1240,7 +1148,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a68v08s11n36",
+    name: "vendor_lib_rfsa_adsp_bm3a68v08s11n36_bin",
     filename: "bm3a68v08s11n36.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n36.bin",
@@ -1249,7 +1157,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a68v08s11n37",
+    name: "vendor_lib_rfsa_adsp_bm3a68v08s11n37_bin",
     filename: "bm3a68v08s11n37.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n37.bin",
@@ -1258,7 +1166,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a68v08s11n38",
+    name: "vendor_lib_rfsa_adsp_bm3a68v08s11n38_bin",
     filename: "bm3a68v08s11n38.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n38.bin",
@@ -1267,7 +1175,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a68v08s11n39",
+    name: "vendor_lib_rfsa_adsp_bm3a68v08s11n39_bin",
     filename: "bm3a68v08s11n39.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n39.bin",
@@ -1276,7 +1184,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a68v08s11n40",
+    name: "vendor_lib_rfsa_adsp_bm3a68v08s11n40_bin",
     filename: "bm3a68v08s11n40.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n40.bin",
@@ -1285,7 +1193,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a68v08s11n46",
+    name: "vendor_lib_rfsa_adsp_bm3a68v08s11n46_bin",
     filename: "bm3a68v08s11n46.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n46.bin",
@@ -1294,7 +1202,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a68v08s11n47",
+    name: "vendor_lib_rfsa_adsp_bm3a68v08s11n47_bin",
     filename: "bm3a68v08s11n47.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n47.bin",
@@ -1303,7 +1211,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a68v08s11n48",
+    name: "vendor_lib_rfsa_adsp_bm3a68v08s11n48_bin",
     filename: "bm3a68v08s11n48.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n48.bin",
@@ -1312,7 +1220,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a68v08s11n49",
+    name: "vendor_lib_rfsa_adsp_bm3a68v08s11n49_bin",
     filename: "bm3a68v08s11n49.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n49.bin",
@@ -1321,7 +1229,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a68v08s11n52",
+    name: "vendor_lib_rfsa_adsp_bm3a68v08s11n52_bin",
     filename: "bm3a68v08s11n52.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n52.bin",
@@ -1330,7 +1238,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a68v08s11n53",
+    name: "vendor_lib_rfsa_adsp_bm3a68v08s11n53_bin",
     filename: "bm3a68v08s11n53.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a68v08s11n53.bin",
@@ -1339,7 +1247,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n02",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n02_bin",
     filename: "bm3a73v08s11n02.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n02.bin",
@@ -1348,7 +1256,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n03",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n03_bin",
     filename: "bm3a73v08s11n03.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n03.bin",
@@ -1357,7 +1265,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n04",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n04_bin",
     filename: "bm3a73v08s11n04.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n04.bin",
@@ -1366,7 +1274,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n06",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n06_bin",
     filename: "bm3a73v08s11n06.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n06.bin",
@@ -1375,7 +1283,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n07",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n07_bin",
     filename: "bm3a73v08s11n07.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n07.bin",
@@ -1384,7 +1292,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n08",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n08_bin",
     filename: "bm3a73v08s11n08.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n08.bin",
@@ -1393,7 +1301,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n09",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n09_bin",
     filename: "bm3a73v08s11n09.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n09.bin",
@@ -1402,7 +1310,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n12",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n12_bin",
     filename: "bm3a73v08s11n12.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n12.bin",
@@ -1411,7 +1319,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n13",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n13_bin",
     filename: "bm3a73v08s11n13.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n13.bin",
@@ -1420,7 +1328,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n14",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n14_bin",
     filename: "bm3a73v08s11n14.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n14.bin",
@@ -1429,7 +1337,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n15",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n15_bin",
     filename: "bm3a73v08s11n15.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n15.bin",
@@ -1438,7 +1346,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n16",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n16_bin",
     filename: "bm3a73v08s11n16.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n16.bin",
@@ -1447,7 +1355,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n17",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n17_bin",
     filename: "bm3a73v08s11n17.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n17.bin",
@@ -1456,7 +1364,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n18",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n18_bin",
     filename: "bm3a73v08s11n18.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n18.bin",
@@ -1465,7 +1373,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n19",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n19_bin",
     filename: "bm3a73v08s11n19.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n19.bin",
@@ -1474,7 +1382,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n20",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n20_bin",
     filename: "bm3a73v08s11n20.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n20.bin",
@@ -1483,7 +1391,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n21",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n21_bin",
     filename: "bm3a73v08s11n21.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n21.bin",
@@ -1492,7 +1400,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n22",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n22_bin",
     filename: "bm3a73v08s11n22.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n22.bin",
@@ -1501,7 +1409,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n23",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n23_bin",
     filename: "bm3a73v08s11n23.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n23.bin",
@@ -1510,7 +1418,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n24",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n24_bin",
     filename: "bm3a73v08s11n24.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n24.bin",
@@ -1519,7 +1427,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n25",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n25_bin",
     filename: "bm3a73v08s11n25.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n25.bin",
@@ -1528,7 +1436,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n26",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n26_bin",
     filename: "bm3a73v08s11n26.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n26.bin",
@@ -1537,7 +1445,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n27",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n27_bin",
     filename: "bm3a73v08s11n27.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n27.bin",
@@ -1546,7 +1454,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n28",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n28_bin",
     filename: "bm3a73v08s11n28.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n28.bin",
@@ -1555,7 +1463,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n41",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n41_bin",
     filename: "bm3a73v08s11n41.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n41.bin",
@@ -1564,7 +1472,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n42",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n42_bin",
     filename: "bm3a73v08s11n42.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n42.bin",
@@ -1573,7 +1481,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n43",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n43_bin",
     filename: "bm3a73v08s11n43.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n43.bin",
@@ -1582,7 +1490,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n44",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n44_bin",
     filename: "bm3a73v08s11n44.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n44.bin",
@@ -1591,7 +1499,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n45",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n45_bin",
     filename: "bm3a73v08s11n45.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n45.bin",
@@ -1600,7 +1508,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n50",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n50_bin",
     filename: "bm3a73v08s11n50.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n50.bin",
@@ -1609,7 +1517,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n51",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n51_bin",
     filename: "bm3a73v08s11n51.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n51.bin",
@@ -1618,7 +1526,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n57",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n57_bin",
     filename: "bm3a73v08s11n57.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n57.bin",
@@ -1627,7 +1535,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n58",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n58_bin",
     filename: "bm3a73v08s11n58.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n58.bin",
@@ -1636,7 +1544,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n59",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n59_bin",
     filename: "bm3a73v08s11n59.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n59.bin",
@@ -1645,7 +1553,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n60",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n60_bin",
     filename: "bm3a73v08s11n60.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n60.bin",
@@ -1654,7 +1562,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n61",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n61_bin",
     filename: "bm3a73v08s11n61.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n61.bin",
@@ -1663,7 +1571,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n62",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n62_bin",
     filename: "bm3a73v08s11n62.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n62.bin",
@@ -1672,7 +1580,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm3a73v08s11n63",
+    name: "vendor_lib_rfsa_adsp_bm3a73v08s11n63_bin",
     filename: "bm3a73v08s11n63.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm3a73v08s11n63.bin",
@@ -1681,7 +1589,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "capi_cirrus_sp",
+    name: "vendor_lib_rfsa_adsp_capi_cirrus_sp_so",
     filename: "capi_cirrus_sp.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/capi_cirrus_sp.so",
@@ -1690,7 +1598,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "chre_qsh_shim",
+    name: "vendor_lib_rfsa_adsp_chre_qsh_shim_so",
     filename: "chre_qsh_shim.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/chre_qsh_shim.so",
@@ -1699,7 +1607,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libCalculator_skel",
+    name: "vendor_lib_rfsa_adsp_libCalculator_skel_so",
     filename: "libCalculator_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libCalculator_skel.so",
@@ -1708,7 +1616,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libDspIOProxy_skel",
+    name: "vendor_lib_rfsa_adsp_libDspIOProxy_skel_so",
     filename: "libDspIOProxy_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libDspIOProxy_skel.so",
@@ -1717,7 +1625,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libQ6MSFR_manager_skel",
+    name: "vendor_lib_rfsa_adsp_libQ6MSFR_manager_skel_so",
     filename: "libQ6MSFR_manager_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so",
@@ -1726,7 +1634,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libQnnHtpV73",
+    name: "vendor_lib_rfsa_adsp_libQnnHtpV73_so",
     filename: "libQnnHtpV73.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libQnnHtpV73.so",
@@ -1735,7 +1643,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libQnnHtpV73Skel",
+    name: "vendor_lib_rfsa_adsp_libQnnHtpV73Skel_so",
     filename: "libQnnHtpV73Skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libQnnHtpV73Skel.so",
@@ -1744,7 +1652,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libQnnSaver",
+    name: "vendor_lib_rfsa_adsp_libQnnSaver_so",
     filename: "libQnnSaver.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libQnnSaver.so",
@@ -1753,7 +1661,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libSnpeDspV65Skel",
+    name: "vendor_lib_rfsa_adsp_libSnpeDspV65Skel_so",
     filename: "libSnpeDspV65Skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libSnpeDspV65Skel.so",
@@ -1762,7 +1670,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libSnpeDspV66Skel",
+    name: "vendor_lib_rfsa_adsp_libSnpeDspV66Skel_so",
     filename: "libSnpeDspV66Skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libSnpeDspV66Skel.so",
@@ -1771,7 +1679,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libSnpeHtpV68Skel",
+    name: "vendor_lib_rfsa_adsp_libSnpeHtpV68Skel_so",
     filename: "libSnpeHtpV68Skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so",
@@ -1780,7 +1688,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libSnpeHtpV69Skel",
+    name: "vendor_lib_rfsa_adsp_libSnpeHtpV69Skel_so",
     filename: "libSnpeHtpV69Skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libSnpeHtpV69Skel.so",
@@ -1789,7 +1697,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libSnpeHtpV73Skel",
+    name: "vendor_lib_rfsa_adsp_libSnpeHtpV73Skel_so",
     filename: "libSnpeHtpV73Skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libSnpeHtpV73Skel.so",
@@ -1798,7 +1706,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libVppAisQnnHtp",
+    name: "vendor_lib_rfsa_adsp_libVppAisQnnHtp_so",
     filename: "libVppAisQnnHtp.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libVppAisQnnHtp.so",
@@ -1807,7 +1715,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libVppFrcQnnHtp",
+    name: "vendor_lib_rfsa_adsp_libVppFrcQnnHtp_so",
     filename: "libVppFrcQnnHtp.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libVppFrcQnnHtp.so",
@@ -1816,7 +1724,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libadsp_jpege_skel",
+    name: "vendor_lib_rfsa_adsp_libadsp_jpege_skel_so",
     filename: "libadsp_jpege_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libadsp_jpege_skel.so",
@@ -1825,7 +1733,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libapn_dsp_skel",
+    name: "vendor_lib_rfsa_adsp_libapn_dsp_skel_so",
     filename: "libapn_dsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libapn_dsp_skel.so",
@@ -1834,7 +1742,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libarc_htp_driver_skel",
+    name: "vendor_lib_rfsa_adsp_libarc_htp_driver_skel_so",
     filename: "libarc_htp_driver_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libarc_htp_driver_skel.so",
@@ -1843,7 +1751,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libbitml_nsp_skel",
+    name: "vendor_lib_rfsa_adsp_libbitml_nsp_skel_so",
     filename: "libbitml_nsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_skel.so",
@@ -1852,7 +1760,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libbitml_nsp_v2_skel",
+    name: "vendor_lib_rfsa_adsp_libbitml_nsp_v2_skel_so",
     filename: "libbitml_nsp_v2_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_v2_skel.so",
@@ -1861,7 +1769,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libdspCV_skel",
+    name: "vendor_lib_rfsa_adsp_libdspCV_skel_so",
     filename: "libdspCV_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so",
@@ -1870,7 +1778,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libdsp_streamer_binning",
+    name: "vendor_lib_rfsa_adsp_libdsp_streamer_binning_so",
     filename: "libdsp_streamer_binning.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_binning.so",
@@ -1879,7 +1787,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libdsp_streamer_qvrcam_receiver",
+    name: "vendor_lib_rfsa_adsp_libdsp_streamer_qvrcam_receiver_so",
     filename: "libdsp_streamer_qvrcam_receiver.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so",
@@ -1888,7 +1796,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libevadsp_3_0",
+    name: "vendor_lib_rfsa_adsp_libevadsp_3_0_so",
     filename: "libevadsp_3_0.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libevadsp_3_0.so",
@@ -1897,7 +1805,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libeye_tracking_dsp_sample_skel",
+    name: "vendor_lib_rfsa_adsp_libeye_tracking_dsp_sample_skel_so",
     filename: "libeye_tracking_dsp_sample_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so",
@@ -1906,7 +1814,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libfastcvadsp",
+    name: "vendor_lib_rfsa_adsp_libfastcvadsp_so",
     filename: "libfastcvadsp.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so",
@@ -1915,7 +1823,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libfastcvdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libfastcvdsp_skel_so",
     filename: "libfastcvdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libfastcvdsp_skel.so",
@@ -1924,7 +1832,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libhalide_hexagon_remote_skel",
+    name: "vendor_lib_rfsa_adsp_libhalide_hexagon_remote_skel_so",
     filename: "libhalide_hexagon_remote_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libhalide_hexagon_remote_skel.so",
@@ -1933,7 +1841,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libhdr_cdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libhdr_cdsp_skel_so",
     filename: "libhdr_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libhdr_cdsp_skel.so",
@@ -1942,7 +1850,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libhdr_skel",
+    name: "vendor_lib_rfsa_adsp_libhdr_skel_so",
     filename: "libhdr_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libhdr_skel.so",
@@ -1951,7 +1859,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmctfengine_skel",
+    name: "vendor_lib_rfsa_adsp_libmctfengine_skel_so",
     filename: "libmctfengine_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmctfengine_skel.so",
@@ -1960,7 +1868,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_basic_cdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libmialgo_basic_cdsp_skel_so",
     filename: "libmialgo_basic_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_basic_cdsp_skel.so",
@@ -1969,7 +1877,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_ldc_cdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libmialgo_ldc_cdsp_skel_so",
     filename: "libmialgo_ldc_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_ldc_cdsp_skel.so",
@@ -1978,7 +1886,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_mc_bokeh_cdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libmialgo_mc_bokeh_cdsp_skel_so",
     filename: "libmialgo_mc_bokeh_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_mc_bokeh_cdsp_skel.so",
@@ -1987,7 +1895,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_rawhdr_cdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libmialgo_rawhdr_cdsp_skel_so",
     filename: "libmialgo_rawhdr_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_rawhdr_cdsp_skel.so",
@@ -1996,7 +1904,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_rfs_cdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libmialgo_rfs_cdsp_skel_so",
     filename: "libmialgo_rfs_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so",
@@ -2005,7 +1913,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_slow_motion_cdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libmialgo_slow_motion_cdsp_skel_so",
     filename: "libmialgo_slow_motion_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_slow_motion_cdsp_skel.so",
@@ -2014,7 +1922,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmobilenet_dsp_frc",
+    name: "vendor_lib_rfsa_adsp_libmobilenet_dsp_frc_so",
     filename: "libmobilenet_dsp_frc.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so",
@@ -2023,7 +1931,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmobilenet_dsp_frc_networks",
+    name: "vendor_lib_rfsa_adsp_libmobilenet_dsp_frc_networks_so",
     filename: "libmobilenet_dsp_frc_networks.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so",
@@ -2032,7 +1940,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libqvr_3dof_tracker_skel",
+    name: "vendor_lib_rfsa_adsp_libqvr_3dof_tracker_skel_so",
     filename: "libqvr_3dof_tracker_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libqvr_3dof_tracker_skel.so",
@@ -2041,7 +1949,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libqvr_cam_dsp_driver_skel",
+    name: "vendor_lib_rfsa_adsp_libqvr_cam_dsp_driver_skel_so",
     filename: "libqvr_cam_dsp_driver_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so",
@@ -2050,7 +1958,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libqvr_dsp_driver_skel",
+    name: "vendor_lib_rfsa_adsp_libqvr_dsp_driver_skel_so",
     filename: "libqvr_dsp_driver_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libqvr_dsp_driver_skel.so",
@@ -2059,7 +1967,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libscveObjectSegmentation_skel",
+    name: "vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so",
     filename: "libscveObjectSegmentation_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so",
@@ -2068,7 +1976,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libscveT2T_skel",
+    name: "vendor_lib_rfsa_adsp_libscveT2T_skel_so",
     filename: "libscveT2T_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so",
@@ -2077,7 +1985,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libtracker_6dof_skel_8450",
+    name: "vendor_lib_rfsa_adsp_libtracker_6dof_skel_8450_so",
     filename: "libtracker_6dof_skel_8450.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libtracker_6dof_skel_8450.so",
@@ -2086,7 +1994,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libvpp_ais",
+    name: "vendor_lib_rfsa_adsp_libvpp_ais_so",
     filename: "libvpp_ais.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libvpp_ais.so",
@@ -2095,7 +2003,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libvpp_ais_networks",
+    name: "vendor_lib_rfsa_adsp_libvpp_ais_networks_so",
     filename: "libvpp_ais_networks.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libvpp_ais_networks.so",
@@ -2104,7 +2012,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libvpp_frc",
+    name: "vendor_lib_rfsa_adsp_libvpp_frc_so",
     filename: "libvpp_frc.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libvpp_frc.so",
@@ -2113,7 +2021,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libvpp_svc_skel",
+    name: "vendor_lib_rfsa_adsp_libvpp_svc_skel_so",
     filename: "libvpp_svc_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libvpp_svc_skel.so",
@@ -2122,7 +2030,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libvpp_vqa_networks",
+    name: "vendor_lib_rfsa_adsp_libvpp_vqa_networks_so",
     filename: "libvpp_vqa_networks.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libvpp_vqa_networks.so",
@@ -2131,7 +2039,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libvpt_action_recognition",
+    name: "vendor_lib_rfsa_adsp_libvpt_action_recognition_so",
     filename: "libvpt_action_recognition.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libvpt_action_recognition.so",
@@ -2140,7 +2048,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "nearby.napp_header",
+    name: "vendor_lib_rfsa_adsp_nearby_napp_header",
     filename: "nearby.napp_header",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/nearby.napp_header",
@@ -2149,7 +2057,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "nearby",
+    name: "vendor_lib_rfsa_adsp_nearby_so",
     filename: "nearby.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/nearby.so",
@@ -2184,6 +2092,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2230,6 +2139,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2276,6 +2186,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2322,6 +2233,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2368,6 +2280,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2414,6 +2327,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2460,6 +2374,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2506,6 +2421,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2552,6 +2468,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2598,6 +2515,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2644,6 +2562,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2690,6 +2609,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2736,6 +2656,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2782,6 +2703,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2828,6 +2750,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2874,6 +2797,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2920,6 +2844,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -2966,6 +2891,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -3012,6 +2938,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -3058,6 +2985,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -3104,6 +3032,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -3144,7 +3073,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libcom.xiaomi.mawutilsold",
-                "libui-v34",
+                "libui",
                 "libxmi_high_dynamic_range",
                 "libxmi_hdr_checker",
                 "libmialgo_sd",
@@ -3160,7 +3089,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/components",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -3183,7 +3111,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libcom.xiaomi.mawutilsold",
-                "libui-v34",
+                "libui",
                 "libwrapper_dlengine",
                 "libc++",
                 "libc",
@@ -3195,7 +3123,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/components",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -3218,7 +3145,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libcom.xiaomi.mawutilsold",
-                "libui-v34",
+                "libui",
                 "libc++",
                 "libc",
                 "libm",
@@ -3229,7 +3156,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/components",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -3251,7 +3177,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libTrueSight",
-                "libui-v34",
+                "libui",
                 "libnativewindow",
                 "libEGL",
                 "libGLESv2",
@@ -3267,7 +3193,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/components",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -3357,7 +3282,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libcom.xiaomi.mawutils",
-                "libui-v34",
+                "libui",
                 "libc++",
                 "libc",
                 "libm",
@@ -3368,7 +3293,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/components",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -3391,7 +3315,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libcom.xiaomi.mawutilsold",
-                "libui-v34",
+                "libui",
                 "libmialgo_globalsaliency",
                 "libwrapper_dlengine",
                 "libc++",
@@ -3404,7 +3328,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/components",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -3529,7 +3452,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libcom.xiaomi.mawutilsold",
-                "libui-v34",
+                "libui",
                 "libsync",
                 "libarcsoft_beautyshot",
                 "libcamxcommonutils",
@@ -3544,7 +3467,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/components",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -3567,7 +3489,7 @@ cc_prebuilt_library_shared {
                 "libTrueSight",
                 "libutils",
                 "libcutils",
-                "libui-v34",
+                "libui",
                 "libnativewindow",
                 "libEGL",
                 "libGLESv2",
@@ -3585,7 +3507,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/components",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -3608,7 +3529,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libcom.xiaomi.mawutilsold",
-                "libui-v34",
+                "libui",
                 "libmibokeh_845_video",
                 "libc++",
                 "libc",
@@ -3620,7 +3541,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/components",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -3644,7 +3564,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcom.xiaomi.mawutilsold",
                 "libui",
-                "libMiVideoFilter",
+                "libMiPhotoFilter",
                 "libc++",
                 "libc",
                 "libm",
@@ -3677,7 +3597,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libcom.xiaomi.mawutilsold",
-                "libui-v34",
+                "libui",
                 "libc++",
                 "libcamxcommonutils",
                 "libcamximageformatutils",
@@ -3693,7 +3613,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/components",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -3932,6 +3851,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -3980,6 +3900,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -4033,6 +3954,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -4043,7 +3965,7 @@ cc_prebuilt_library_shared {
                 "libcamximageformatutils",
                 "libchilog",
                 "libcom.qti.chinodeutils",
-                "libui-v34",
+                "libui",
                 "libz",
                 "libc",
                 "libm",
@@ -4054,7 +3976,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/components",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -4178,6 +4099,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -4231,6 +4153,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -4347,6 +4270,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -4433,6 +4357,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -4486,6 +4411,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -4540,6 +4466,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -4727,6 +4654,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -4844,6 +4772,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -5030,6 +4959,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -5294,6 +5224,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -5345,6 +5276,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -6080,7 +6012,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcamxcommonutils",
                 "libsync",
-                "libui-v34",
+                "libui",
                 "liblog",
                 "libc++",
                 "libc",
@@ -6092,7 +6024,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/components",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -6116,7 +6047,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcamxcommonutils",
                 "libsync",
-                "libui-v34",
+                "libui",
                 "libc++",
                 "libc",
                 "libm",
@@ -6127,7 +6058,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/components",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -6150,7 +6080,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcamxcommonutils",
                 "libsync",
-                "libui-v34",
+                "libui",
                 "liblog",
                 "libc++",
                 "libc",
@@ -6162,7 +6092,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/components",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -6224,6 +6153,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -6270,6 +6200,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -6347,7 +6278,7 @@ cc_prebuilt_library_shared {
                 "libcom.xiaomi.metadatautils",
                 "libcom.xiaomi.debug",
                 "libcom.xiaomi.mawutilsold",
-                "libui-v34",
+                "libui",
                 "libarcsoft_super_night_raw",
                 "libmpbase",
                 "libarcsoft_qnnhtp",
@@ -6361,7 +6292,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/plugins",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -6702,7 +6632,7 @@ cc_prebuilt_library_shared {
                 "libcom.xiaomi.metadatautils",
                 "libcom.xiaomi.debug",
                 "libcom.xiaomi.mawutilsold",
-                "libui-v34",
+                "libui",
                 "libmialgo_ie_capture",
                 "libmialgo_utils",
                 "libc++",
@@ -6715,7 +6645,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/plugins",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -6804,7 +6733,7 @@ cc_prebuilt_library_shared {
                 "libcom.xiaomi.metadatautils",
                 "libcom.xiaomi.debug",
                 "libcom.xiaomi.mawutilsold",
-                "libui-v34",
+                "libui",
                 "libmiai_portraitsupernight",
                 "libbeauty_face_interface",
                 "libc++",
@@ -6817,7 +6746,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/plugins",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -7044,7 +6972,7 @@ cc_prebuilt_library_shared {
                 "libcom.xiaomi.debug",
                 "libmialgo_utils",
                 "libTrueSight",
-                "libui-v34",
+                "libui",
                 "libc++",
                 "libc",
                 "libm",
@@ -7055,7 +6983,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "camera/plugins",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -7176,6 +7103,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7227,6 +7155,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7275,6 +7204,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7323,6 +7253,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7381,6 +7312,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7429,6 +7361,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7478,6 +7411,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7526,6 +7460,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7574,6 +7509,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7622,6 +7558,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7670,6 +7607,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7718,6 +7656,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7789,6 +7728,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7837,6 +7777,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7885,6 +7826,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7933,6 +7875,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -7981,6 +7924,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8029,6 +7973,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8077,6 +8022,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8128,6 +8074,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8176,6 +8123,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8224,6 +8172,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8272,6 +8221,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8320,6 +8270,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8368,6 +8319,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8416,6 +8368,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8464,6 +8417,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8512,6 +8466,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8560,6 +8515,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8608,6 +8564,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8689,6 +8646,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8801,6 +8759,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8849,6 +8808,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8897,6 +8857,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8946,6 +8907,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -8994,6 +8956,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -9042,6 +9005,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -9052,6 +9016,32 @@ cc_prebuilt_library_shared {
                 "com.qti.chi.override",
                 "libchilog",
                 "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.xiaomi.camdfx",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/com.xiaomi.camdfx.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -9078,7 +9068,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libsync",
                 "libutils",
-                "libui-v34",
+                "libui",
                 "libhidlbase",
                 "libprocessgroup",
                 "libc++",
@@ -9090,7 +9080,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -9109,7 +9098,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libsync",
                 "libutils",
-                "libui-v34",
+                "libui",
                 "libhidlbase",
                 "libprocessgroup",
                 "libc++",
@@ -9121,7 +9110,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -9140,7 +9128,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libsync",
                 "libutils",
-                "libui-v34",
+                "libui",
                 "libhidlbase",
                 "libprocessgroup",
                 "libc++",
@@ -9152,7 +9140,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -9183,6 +9170,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -9211,6 +9199,7 @@ cc_prebuilt_library_shared {
                 "libMiMotion",
                 "libXMFaceFocus",
                 "android.frameworks.sensorservice@1.0",
+                "libcom.xiaomi.providercallback",
                 "libeva",
                 "libsynx",
                 "libmemunreachable",
@@ -9268,7 +9257,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "hw",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -9299,6 +9287,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -9350,6 +9339,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -9365,7 +9355,6 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.camera.postproc@1.0-service-impl",
                 "libcamlog",
                 "libc",
-                "libui-v34",
                 "libm",
                 "libdl",
             ],
@@ -9395,63 +9384,12 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libhardware",
                 "libion",
                 "libgf_hal",
                 "libc",
                 "libm",
                 "libdl",
                 "libc++",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.sensor.citsensorservice@2.0-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhidltransport",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libhardware",
-                "libbase",
-                "libssccalapi@2.0",
-                "libsnsapi",
-                "vendor.xiaomi.sensor.citsensorservice@1.1",
-                "vendor.xiaomi.sensor.citsensorservice@2.0",
-                "android.frameworks.sensorservice@1.0",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "android.hardware.graphics.common@1.2",
-                "vendor.display.config@2.0",
-                "libqdutils",
-                "vendor.qti.hardware.display.composer@3.0",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libdisplayconfig.qti",
-                "libtinyxml2",
-                "libjsoncpp",
-                "libmisight",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -9543,7 +9481,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libMiVideoFilter",
+    name: "libMiPhotoFilter",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -9551,7 +9489,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/odm/lib64/libMiVideoFilter.so",
+                "proprietary/odm/lib64/libMiPhotoFilter.so",
             ],
             shared_libs: [
                 "liblog",
@@ -9560,12 +9498,14 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libz",
                 "libm",
+                "libc++_shared",
                 "libdl",
                 "libc",
             ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     device_specific: true,
 }
@@ -10081,6 +10021,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -10157,6 +10098,7 @@ cc_prebuilt_library_shared {
                 "libutilscallstack",
                 "libqti_vndfwk_detect",
                 "liblz4",
+                "com.xiaomi.camdfx",
                 "libz",
                 "libc",
                 "libm",
@@ -10370,6 +10312,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -10621,6 +10564,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -10721,7 +10665,7 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libhidlbase",
                 "libhidltransport",
-                "libui-v34",
+                "libui",
                 "libcamera_metadata",
                 "libutils",
                 "libc",
@@ -10732,7 +10676,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -10841,7 +10784,7 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libhidlbase",
                 "libhidltransport",
-                "libui-v34",
+                "libui",
                 "libcamera_metadata",
                 "libutils",
                 "libc",
@@ -10852,7 +10795,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -10872,7 +10814,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libdmabufheap",
-                "libui-v34",
+                "libui",
                 "libc++",
                 "libc",
                 "libm",
@@ -10882,7 +10824,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -10902,7 +10843,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libdmabufheap",
-                "libui-v34",
+                "libui",
                 "libc++",
                 "libc",
                 "libm",
@@ -10912,7 +10853,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -10975,6 +10915,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcom.xiaomi.providercallback",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libcom.xiaomi.providercallback.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libcom.xiaomi.debug",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcommonchiutils",
     owner: "xiaomi",
     strip: {
@@ -11000,6 +10968,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -11098,35 +11067,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.hardware.campostproc@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.xiaomi.hardware.campostproc@1.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.camera.common@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdualcam_video_optical_zoom",
     owner: "xiaomi",
     strip: {
@@ -11210,6 +11150,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -11247,7 +11188,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libhardware",
                 "libion",
                 "libdmabufheap",
                 "libQSEEComAPI",
@@ -11694,6 +11634,37 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.display.mapper@4.0",
                 "vendor.qti.hardware.display.mapperextensions@1.1",
                 "libcdsprpc",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmiSensorCtrl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libmiSensorCtrl.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidltransport",
+                "libhidlbase",
+                "android.frameworks.sensorservice@1.0",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -12208,7 +12179,7 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libhidlbase",
                 "libhidltransport",
-                "libui-v34",
+                "libui",
                 "libcamera_metadata",
                 "libutils",
                 "libdmabufheap",
@@ -12229,7 +12200,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -12688,7 +12658,7 @@ cc_prebuilt_library_shared {
                 "libchilog",
                 "libcutils",
                 "libutils",
-                "libui-v34",
+                "libui",
                 "libc++",
                 "libc",
                 "libm",
@@ -12698,7 +12668,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -12816,7 +12785,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libvidhance",
                 "libutils",
-                "libui-v34",
+                "libui",
                 "libc++",
                 "libc",
                 "libm",
@@ -12826,7 +12795,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    check_elf_files: false,
     device_specific: true,
 }
 
@@ -13210,6 +13178,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -13613,47 +13582,6 @@ cc_prebuilt_library_shared {
                 "libcdsprpc",
                 "libcutils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libssccalapi@2.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libssccalapi@2.0.so",
-            ],
-            shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "liblog",
-                "libsnsapi",
-                "libsensorslog",
-                "libssc",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "libhidltransport",
-                "libhidlbase",
-                "vendor.xiaomi.sensor.citsensorservice@1.1",
-                "vendor.xiaomi.sensor.citsensorservice@2.0",
-                "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.0-ScopedWakelock",
-                "android.frameworks.sensorservice@1.0",
-                "libjsoncpp",
-                "libmisight",
                 "libc++",
                 "libc",
                 "libm",
@@ -14320,6 +14248,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -14371,6 +14300,7 @@ cc_prebuilt_library_shared {
                 "libcamxsettingsmanager",
                 "libqti_vndfwk_detect",
                 "libutils",
+                "com.xiaomi.camdfx",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libgralloc.qti",
@@ -14424,7 +14354,7 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_rfsa {
-    name: "libarcsoft_beauty_hvx_skel",
+    name: "odm_lib_rfsa_adsp_libarcsoft_beauty_hvx_skel_so",
     filename: "libarcsoft_beauty_hvx_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libarcsoft_beauty_hvx_skel.so",
@@ -14433,7 +14363,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_ell_cdsp_skel",
+    name: "odm_lib_rfsa_adsp_libmialgo_ell_cdsp_skel_so",
     filename: "libmialgo_ell_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libmialgo_ell_cdsp_skel.so",
@@ -14442,7 +14372,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmialgo_night_align_cdsp_skel",
+    name: "odm_lib_rfsa_adsp_libmialgo_night_align_cdsp_skel_so",
     filename: "libmialgo_night_align_cdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/odm/lib/rfsa/adsp/libmialgo_night_align_cdsp_skel.so",
@@ -14495,6 +14425,7 @@ cc_prebuilt_binary {
                 "libbinder_ndk",
                 "libhardware",
                 "libfmq",
+                "libcom.xiaomi.providercallback",
                 "android.hardware.camera.common@1.0",
                 "android.hardware.camera.common-V1-ndk",
                 "android.hardware.camera.device-V1-ndk",
@@ -14515,50 +14446,6 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "liblog",
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    device_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.xiaomi.sensor.citsensorservice@2.0-service.xml",
-    owner: "xiaomi",
-    src: "proprietary/odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@2.0-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    device_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.xiaomi.sensor.citsensorservice@2.0-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libssccalapi@2.0",
-                "libhidlbase",
-                "libhidltransport",
-                "vendor.xiaomi.sensor.citsensorservice@1.1",
-                "vendor.xiaomi.sensor.citsensorservice@2.0",
-                "android.frameworks.sensorservice@1.0",
                 "libc++",
                 "libc",
                 "libm",

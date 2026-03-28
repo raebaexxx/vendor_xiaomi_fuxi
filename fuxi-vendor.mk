@@ -8,10 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/odm/etc/audio/misound_res_spk_power_game.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/misound_res_spk_power_game.bin \
     vendor/xiaomi/fuxi/proprietary/odm/etc/audio/misound_res_spk_power_video.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/misound_res_spk_power_video.bin \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/audio/sku_kalama/mixer_paths_kalama_mtp.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_kalama/mixer_paths_kalama_mtp.xml \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/audio/sku_kalama/mixer_paths_overlay_dynamic.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_kalama/mixer_paths_overlay_dynamic.xml \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/audio/sku_kalama/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_kalama/mixer_paths_overlay_static.xml \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml \
     vendor/xiaomi/fuxi/proprietary/odm/etc/backend_conf.xml:$(TARGET_COPY_OUT_ODM)/etc/backend_conf.xml \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/CFR_para_UW_V01.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/CFR_para_UW_V01.bin \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/GpuKernelRepo.pb:$(TARGET_COPY_OUT_ODM)/etc/camera/GpuKernelRepo.pb \
@@ -19,6 +15,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/MILDC_CAPTURE_PARAMS.json:$(TARGET_COPY_OUT_ODM)/etc/camera/MILDC_CAPTURE_PARAMS.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/MILDC_PREVIEW_PARAMS.json:$(TARGET_COPY_OUT_ODM)/etc/camera/MILDC_PREVIEW_PARAMS.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/MobNetv2TF_0.35_iter200000_zoom2.5x_h1500w2000.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/MobNetv2TF_0.35_iter200000_zoom2.5x_h1500w2000.dlc \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/VideoNight4K/ellv.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/VideoNight4K/ellv.bin \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/VideoNight4K/ellv_params.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/VideoNight4K/ellv_params.xml \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/af_class_all.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/af_class_all.dlc \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/af_class_human.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/af_class_human.dlc \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/af_classify.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/af_classify.dlc \
@@ -42,7 +40,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/beauty_config_gl.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_config_gl.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/beauty_style_nude.cng:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_style_nude.cng \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/bokehParams.json:$(TARGET_COPY_OUT_ODM)/etc/camera/bokehParams.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/cameradfx_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameradfx_config.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/cameraopt_reclaim.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt_reclaim.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/camxoverridesettings.txt \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/com.xiaomi.dcal.wt.data:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.wt.data \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/com.xiaomi.dcal.wt.golden:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.wt.golden \
@@ -112,13 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/preview_bokeh_params_mono.json:$(TARGET_COPY_OUT_ODM)/etc/camera/preview_bokeh_params_mono.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/preview_bokeh_params_pro.json:$(TARGET_COPY_OUT_ODM)/etc/camera/preview_bokeh_params_pro.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/preview_mdbokeh_params_pro.json:$(TARGET_COPY_OUT_ODM)/etc/camera/preview_mdbokeh_params_pro.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/sky_segmentation_qat.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/sky_segmentation_qat.dlc \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/snsc.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/snsc.bin \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/snsc_params.json:$(TARGET_COPY_OUT_ODM)/etc/camera/snsc_params.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/ultrazoom.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/ultrazoom.bin \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/ultrazoom_ii.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/ultrazoom_ii.bin \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/video_stabilizer.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/video_stabilizer.xml \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_ODM)/etc/camera/vidhance_calibration \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/resources/default_param.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/default_param.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/resources/kernel/1720888_32.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/kernel/1720888_32.bin \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/resources/kernel/1720888_64.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/kernel/1720888_64.bin \
@@ -422,36 +414,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/resources/render/glsl/binShaders64/shader_YUV2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/glsl/binShaders64/shader_YUV2YUVUtils_SWAP_UV.bin \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/resources/truesight_param.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/truesight_param.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/resources/truesight_param_debug.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/truesight_param_debug.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/EcoCloudInfo.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/EcoCloudInfo.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/dualbokehjpegsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/dualbokehjpegsnapshot.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/dualbokehsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/dualbokehsnapshot.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/ecovendorstreamconfig.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/ecovendorstreamconfig.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/frontbokehsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/frontbokehsnapshot.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/frontsinglesnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/frontsinglesnapshot.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/frontsupernightsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/frontsupernightsnapshot.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/frontsupernightsnapshotjpeg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/frontsupernightsnapshotjpeg.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/manualsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/manualsnapshot.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/miuicamerayuv2heic.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/miuicamerayuv2heic.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/miuicamerayuv2jpeg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/miuicamerayuv2jpeg.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/mivisettings.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/mivisettings.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/mivistreamformat.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/mivistreamformat.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/mivivendorstreamconfig.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/mivivendorstreamconfig.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/normalsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/normalsnapshot.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/overridesettings.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/overridesettings.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/rearsupernightsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/rearsupernightsnapshot.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/satburstsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/satburstsnapshot.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/satsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/satsnapshot.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/satsnapshotjpeg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/satsnapshotjpeg.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/settings.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/settings.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/superhdsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/superhdsnapshot.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartydualbokehyuvsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartydualbokehyuvsnapshot.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartyjpegsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartyjpegsnapshot.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartyrawsupernightjpeg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartyrawsupernightjpeg.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartyrawsupernightjpeg_ext.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartyrawsupernightjpeg_ext.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartyrawsupernightyuv_ext.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartyrawsupernightyuv_ext.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartysnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartysnapshot.json \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomiSceneDetection.xml \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/sceneDetection.xml \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/sky_segmentation_qat.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/sky_segmentation_qat.dlc \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/snsc.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/snsc.bin \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/snsc_params.json:$(TARGET_COPY_OUT_ODM)/etc/camera/snsc_params.json \
@@ -487,6 +450,38 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/videofilter/165_C50D.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/165_C50D.png \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/videofilter/166_F50.png:$(TARGET_COPY_OUT_ODM)/etc/camera/videofilter/166_F50.png \
     vendor/xiaomi/fuxi/proprietary/odm/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_ODM)/etc/camera/vidhance_calibration \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/EcoCloudInfo.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/EcoCloudInfo.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/dualbokehjpegsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/dualbokehjpegsnapshot.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/dualbokehsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/dualbokehsnapshot.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/ecovendorstreamconfig.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/ecovendorstreamconfig.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/frontbokehsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/frontbokehsnapshot.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/frontsinglesnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/frontsinglesnapshot.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/frontsupernightsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/frontsupernightsnapshot.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/frontsupernightsnapshotjpeg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/frontsupernightsnapshotjpeg.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/manualsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/manualsnapshot.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/miuicamerayuv2heic.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/miuicamerayuv2heic.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/miuicamerayuv2jpeg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/miuicamerayuv2jpeg.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/mivisettings.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/mivisettings.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/mivistreamformat.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/mivistreamformat.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/mivivendorstreamconfig.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/mivivendorstreamconfig.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/normalsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/normalsnapshot.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/overridesettings.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/overridesettings.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/rearsupernightsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/rearsupernightsnapshot.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/satburstsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/satburstsnapshot.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/satsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/satsnapshot.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/satsnapshotjpeg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/satsnapshotjpeg.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/settings.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/settings.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/superhdsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/superhdsnapshot.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartydualbokehyuvsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartydualbokehyuvsnapshot.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartyjpegsnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartyjpegsnapshot.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartyrawsupernightjpeg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartyrawsupernightjpeg.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartyrawsupernightjpeg_ext.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartyrawsupernightjpeg_ext.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartyrawsupernightyuv_ext.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartyrawsupernightyuv_ext.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomi/thirdpartysnapshot.json:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/thirdpartysnapshot.json \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomiSceneDetection.xml \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xmi_slmt_4x_1080p.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/xmi_slmt_4x_1080p.dlc \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/camera/xmi_slmt_4x_720p.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/xmi_slmt_4x_720p.dlc \
     vendor/xiaomi/fuxi/proprietary/odm/etc/cit_camera_resolution.json:$(TARGET_COPY_OUT_ODM)/etc/cit_camera_resolution.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/cit_param_config.json:$(TARGET_COPY_OUT_ODM)/etc/cit_param_config.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/df_default.xml:$(TARGET_COPY_OUT_ODM)/etc/df_default.xml \
@@ -525,7 +520,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/odm/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml \
     vendor/xiaomi/fuxi/proprietary/odm/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby_vision.cfg \
     vendor/xiaomi/fuxi/proprietary/odm/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.camera.provider-service_64.rc \
-    vendor/xiaomi/fuxi/proprietary/odm/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc \
     vendor/xiaomi/fuxi/proprietary/odm/etc/mdss_dsi_m3_38_0c_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/mdss_dsi_m3_38_0c_0a_dsc_cmd_mi.xml \
     vendor/xiaomi/fuxi/proprietary/odm/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/ak991x_dri_0.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/sensors/config/kailua_qsh_ble_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/kailua_qsh_ble_0.json \
@@ -712,7 +706,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libPlatformValidatorShared-camera \
     android.hardware.camera.provider@2.7-impl-vcamera \
-    vendor.xiaomi.hardware.quickcamera@1.0-impl \
     libPlatformValidatorShared \
     libQnnChrometraceProfilingReader \
     libQnnGpu \
@@ -740,7 +733,6 @@ PRODUCT_PACKAGES += \
     libmicuttlefish_fs \
     libmivsock_utils \
     libos \
-    libquickcamera \
     libqvr_cam_cdsp_driver_stub \
     libqvr_cdsp_driver_stub \
     libqvrcamera_client.qti \
@@ -754,112 +746,111 @@ PRODUCT_PACKAGES += \
     libthreadutils \
     vendor.qti.hardware.qxr-V1-ndk \
     vendor.xiaomi.hardware.bgservice@1.0 \
-    vendor.xiaomi.hardware.quickcamera@1.0 \
-    bm3a68v08s11n29 \
-    bm3a68v08s11n30 \
-    bm3a68v08s11n35 \
-    bm3a68v08s11n36 \
-    bm3a68v08s11n37 \
-    bm3a68v08s11n38 \
-    bm3a68v08s11n39 \
-    bm3a68v08s11n40 \
-    bm3a68v08s11n46 \
-    bm3a68v08s11n47 \
-    bm3a68v08s11n48 \
-    bm3a68v08s11n49 \
-    bm3a68v08s11n52 \
-    bm3a68v08s11n53 \
-    bm3a73v08s11n02 \
-    bm3a73v08s11n03 \
-    bm3a73v08s11n04 \
-    bm3a73v08s11n06 \
-    bm3a73v08s11n07 \
-    bm3a73v08s11n08 \
-    bm3a73v08s11n09 \
-    bm3a73v08s11n12 \
-    bm3a73v08s11n13 \
-    bm3a73v08s11n14 \
-    bm3a73v08s11n15 \
-    bm3a73v08s11n16 \
-    bm3a73v08s11n17 \
-    bm3a73v08s11n18 \
-    bm3a73v08s11n19 \
-    bm3a73v08s11n20 \
-    bm3a73v08s11n21 \
-    bm3a73v08s11n22 \
-    bm3a73v08s11n23 \
-    bm3a73v08s11n24 \
-    bm3a73v08s11n25 \
-    bm3a73v08s11n26 \
-    bm3a73v08s11n27 \
-    bm3a73v08s11n28 \
-    bm3a73v08s11n41 \
-    bm3a73v08s11n42 \
-    bm3a73v08s11n43 \
-    bm3a73v08s11n44 \
-    bm3a73v08s11n45 \
-    bm3a73v08s11n50 \
-    bm3a73v08s11n51 \
-    bm3a73v08s11n57 \
-    bm3a73v08s11n58 \
-    bm3a73v08s11n59 \
-    bm3a73v08s11n60 \
-    bm3a73v08s11n61 \
-    bm3a73v08s11n62 \
-    bm3a73v08s11n63 \
-    capi_cirrus_sp \
-    chre_qsh_shim \
-    libCalculator_skel \
-    libDspIOProxy_skel \
-    libQ6MSFR_manager_skel \
-    libQnnHtpV73 \
-    libQnnHtpV73Skel \
-    libQnnSaver \
-    libSnpeDspV65Skel \
-    libSnpeDspV66Skel \
-    libSnpeHtpV68Skel \
-    libSnpeHtpV69Skel \
-    libSnpeHtpV73Skel \
-    libVppAisQnnHtp \
-    libVppFrcQnnHtp \
-    libadsp_jpege_skel \
-    libapn_dsp_skel \
-    libarc_htp_driver_skel \
-    libbitml_nsp_skel \
-    libbitml_nsp_v2_skel \
-    libdspCV_skel \
-    libdsp_streamer_binning \
-    libdsp_streamer_qvrcam_receiver \
-    libevadsp_3_0 \
-    libeye_tracking_dsp_sample_skel \
-    libfastcvadsp \
-    libfastcvdsp_skel \
-    libhalide_hexagon_remote_skel \
-    libhdr_cdsp_skel \
-    libhdr_skel \
-    libmctfengine_skel \
-    libmialgo_basic_cdsp_skel \
-    libmialgo_ldc_cdsp_skel \
-    libmialgo_mc_bokeh_cdsp_skel \
-    libmialgo_rawhdr_cdsp_skel \
-    libmialgo_rfs_cdsp_skel \
-    libmialgo_slow_motion_cdsp_skel \
-    libmobilenet_dsp_frc \
-    libmobilenet_dsp_frc_networks \
-    libqvr_3dof_tracker_skel \
-    libqvr_cam_dsp_driver_skel \
-    libqvr_dsp_driver_skel \
-    libscveObjectSegmentation_skel \
-    libscveT2T_skel \
-    libtracker_6dof_skel_8450 \
-    libvpp_ais \
-    libvpp_ais_networks \
-    libvpp_frc \
-    libvpp_svc_skel \
-    libvpp_vqa_networks \
-    libvpt_action_recognition \
-    nearby.napp_header \
-    nearby \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n29_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n30_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n35_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n36_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n37_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n38_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n39_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n40_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n46_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n47_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n48_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n49_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n52_bin \
+    vendor_lib_rfsa_adsp_bm3a68v08s11n53_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n02_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n03_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n04_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n06_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n07_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n08_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n09_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n12_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n13_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n14_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n15_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n16_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n17_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n18_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n19_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n20_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n21_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n22_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n23_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n24_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n25_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n26_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n27_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n28_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n41_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n42_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n43_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n44_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n45_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n50_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n51_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n57_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n58_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n59_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n60_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n61_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n62_bin \
+    vendor_lib_rfsa_adsp_bm3a73v08s11n63_bin \
+    vendor_lib_rfsa_adsp_capi_cirrus_sp_so \
+    vendor_lib_rfsa_adsp_chre_qsh_shim_so \
+    vendor_lib_rfsa_adsp_libCalculator_skel_so \
+    vendor_lib_rfsa_adsp_libDspIOProxy_skel_so \
+    vendor_lib_rfsa_adsp_libQ6MSFR_manager_skel_so \
+    vendor_lib_rfsa_adsp_libQnnHtpV73_so \
+    vendor_lib_rfsa_adsp_libQnnHtpV73Skel_so \
+    vendor_lib_rfsa_adsp_libQnnSaver_so \
+    vendor_lib_rfsa_adsp_libSnpeDspV65Skel_so \
+    vendor_lib_rfsa_adsp_libSnpeDspV66Skel_so \
+    vendor_lib_rfsa_adsp_libSnpeHtpV68Skel_so \
+    vendor_lib_rfsa_adsp_libSnpeHtpV69Skel_so \
+    vendor_lib_rfsa_adsp_libSnpeHtpV73Skel_so \
+    vendor_lib_rfsa_adsp_libVppAisQnnHtp_so \
+    vendor_lib_rfsa_adsp_libVppFrcQnnHtp_so \
+    vendor_lib_rfsa_adsp_libadsp_jpege_skel_so \
+    vendor_lib_rfsa_adsp_libapn_dsp_skel_so \
+    vendor_lib_rfsa_adsp_libarc_htp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_v2_skel_so \
+    vendor_lib_rfsa_adsp_libdspCV_skel_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_binning_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_qvrcam_receiver_so \
+    vendor_lib_rfsa_adsp_libevadsp_3_0_so \
+    vendor_lib_rfsa_adsp_libeye_tracking_dsp_sample_skel_so \
+    vendor_lib_rfsa_adsp_libfastcvadsp_so \
+    vendor_lib_rfsa_adsp_libfastcvdsp_skel_so \
+    vendor_lib_rfsa_adsp_libhalide_hexagon_remote_skel_so \
+    vendor_lib_rfsa_adsp_libhdr_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libhdr_skel_so \
+    vendor_lib_rfsa_adsp_libmctfengine_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_basic_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_ldc_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_mc_bokeh_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_rawhdr_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_rfs_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_slow_motion_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmobilenet_dsp_frc_so \
+    vendor_lib_rfsa_adsp_libmobilenet_dsp_frc_networks_so \
+    vendor_lib_rfsa_adsp_libqvr_3dof_tracker_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_cam_dsp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_dsp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so \
+    vendor_lib_rfsa_adsp_libscveT2T_skel_so \
+    vendor_lib_rfsa_adsp_libtracker_6dof_skel_8450_so \
+    vendor_lib_rfsa_adsp_libvpp_ais_so \
+    vendor_lib_rfsa_adsp_libvpp_ais_networks_so \
+    vendor_lib_rfsa_adsp_libvpp_frc_so \
+    vendor_lib_rfsa_adsp_libvpp_svc_skel_so \
+    vendor_lib_rfsa_adsp_libvpp_vqa_networks_so \
+    vendor_lib_rfsa_adsp_libvpt_action_recognition_so \
+    vendor_lib_rfsa_adsp_nearby_napp_header \
+    vendor_lib_rfsa_adsp_nearby_so \
     com.qti.actuator.fuxi_semco_imx800_ak7314_wide_actuator \
     com.qti.actuator.fuxi_semco_s5k3k1_ak7314_tele_actuator \
     com.qti.actuator.fuxi_semco_s5k3k1_ak7314_tele_actuator_ii \
@@ -1032,6 +1023,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.mcx.policy.mfl \
     com.qualcomm.mcx.policy.xr \
     com.qualcomm.qti.mcx.usecase.extension \
+    com.xiaomi.camdfx \
     com.xiaomi.camhal.overlap \
     com.xiaomi.camhal.submodel.camxfrag \
     com.xiaomi.camhal.submodel.chifrag \
@@ -1040,11 +1032,10 @@ PRODUCT_PACKAGES += \
     com.qti.chi.offline \
     com.qti.chi.override \
     fingerprint.goodix_fod.default \
-    vendor.xiaomi.sensor.citsensorservice@2.0-impl \
     libAF \
     libHISCppAlgos \
     libMiMotion \
-    libMiVideoFilter \
+    libMiPhotoFilter \
     libTrueSight \
     libXMFaceFocus \
     libaidenoiser \
@@ -1091,6 +1082,7 @@ PRODUCT_PACKAGES += \
     libcom.xiaomi.mawutilsold \
     libcom.xiaomi.metadatautils \
     libcom.xiaomi.pluginutils \
+    libcom.xiaomi.providercallback \
     libcommonchiutils \
     libdeflicker \
     libdeflickerNM \
@@ -1110,6 +1102,7 @@ PRODUCT_PACKAGES += \
     libmctfengine_stub \
     libmfGhostDetection \
     libmfec \
+    libmiSensorCtrl \
     libmiStereoFactoryRemapBasicLib \
     libmiStereoFactoryRemapLib \
     libmi_hdr_raw \
@@ -1172,7 +1165,6 @@ PRODUCT_PACKAGES += \
     libremosaic_wrapper \
     libremosaiclib \
     libsfeShiftExtrapolation \
-    libssccalapi@2.0 \
     libsupermoon \
     libswregistrationalgo \
     libtfestriping \
@@ -1198,12 +1190,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.xiaomi.hardware.bgservice@1.0-impl \
-    vendor.xiaomi.hardware.campostproc@1.0 \
-    libarcsoft_beauty_hvx_skel \
-    libmialgo_ell_cdsp_skel \
-    libmialgo_night_align_cdsp_skel \
+    odm_lib_rfsa_adsp_libarcsoft_beauty_hvx_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_ell_cdsp_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_night_align_cdsp_skel_so \
     android.hardware.camera.provider@2.7-virtual-camera-service \
-    vendor.xiaomi.hardware.quickcamera@1.0-service \
-    vendor.qti.camera.provider-service_64 \
-    vendor.xiaomi.sensor.citsensorservice@2.0-service.xml \
-    vendor.xiaomi.sensor.citsensorservice@2.0-service
+    vendor.qti.camera.provider-service_64

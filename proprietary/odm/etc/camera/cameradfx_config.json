@@ -1,0 +1,89 @@
+{
+    "SENSORNAME_ROLEID_MAP":[
+        {
+            "sensorName": "fuxi_semco_imx800_wide",
+            "roleID": 0
+        },
+        {
+            "sensorName": "fuxi_semco_imx800_p24c128f_wide_eeprom",
+            "roleID": 0
+        },
+        {
+            "sensorName": "fuxi_semco_imx800_ak7314_wide_actuator",
+            "roleID": 0
+        },
+        {
+            "sensorName": "fuxi_imx800_bu24721_ois",
+            "roleID": 0
+        },
+        {
+            "sensorName": "fuxi_sunny_imx800_wide_ii",
+            "roleID": 0
+        },
+        {
+            "sensorName": "fuxi_sunny_imx800_gt24p256f_wide_eeprom_ii",
+            "roleID": 0
+        },
+        {
+            "sensorName": "fuxi_sunny_imx800_ak7314_wide_actuator_ii",
+            "roleID": 0
+        },
+        {
+            "sensorName": "fuxi_imx800_bu24721_ois_2",
+            "roleID": 0
+        },
+        {
+            "sensorName": "fuxi_sunny_ov32c_front",
+            "roleID": 1
+        },
+        {
+            "sensorName": "fuxi_sunny_ov32c_gt24p64e_front_eeprom",
+            "roleID": 1
+        },
+        {
+            "sensorName": "fuxi_ofilm_ov13b10_ultra",
+            "roleID": 21
+        },
+        {
+            "sensorName": "fuxi_ofilm_ov13b10_gt24p64e_ultra_eeprom",
+            "roleID": 21
+        },
+        {
+            "sensorName": "fuxi_semco_s5k3k1_tele",
+            "roleID": 20
+        },
+        {
+            "sensorName": "fuxi_semo_s5k3k1_p24c64f_tele_eeprom",
+            "roleID": 20
+        },
+        {
+            "sensorName": "fuxi_semco_s5k3k1_ak7314_tele_actuator",
+            "roleID": 20
+        },
+        {
+            "sensorName": "fuxi_s5k3k1_bu24721_ois",
+            "roleID": 20
+        },
+        {
+            "sensorName": "fuxi_semco_s5k3k1_tele_ii",
+            "roleID": 20
+        },
+        {
+            "sensorName": "fuxi_semo_s5k3k1_p24c64f_tele_eeprom_ii",
+            "roleID": 20
+        },
+        {
+            "sensorName": "fuxi_semco_s5k3k1_ak7314_tele_actuator_ii",
+            "roleID": 20
+        },
+        {
+            "sensorName": "fuxi_s5k3k1_bu24618_ois_ii",
+            "roleID": 20
+        }
+    ],
+
+    "TOMBSTONE_FUNCTION":{
+        "isEnable": true,
+        "fileNumber": 20
+    }
+}
