@@ -702,6 +702,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/effect_3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_3.bin \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/effect_4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_4.bin \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/effect_5.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_5.bin \
+    vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/effect_6.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_6.bin \
+    vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/effect_7.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_7.bin \
+    vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/effect_8.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_8.bin \
+    vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/effect_9.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_9.bin
     vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/primitive_effect_0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_0.bin \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/primitive_effect_1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_1.bin \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/primitive_effect_2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_2.bin \
