@@ -710,8 +710,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/primitive_effect_5.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_5.bin \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/primitive_effect_6.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_6.bin \
     vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/primitive_effect_7.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_7.bin \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/primitive_effect_8.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_8.bin \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/primitive_effect_9.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_9.bin
+    vendor/xiaomi/fuxi/proprietary/vendor/etc/vibrator/primitive_effect_8.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/primitive_effect_8.bin
 
 PRODUCT_PACKAGES += \
     libPlatformValidatorShared-camera \
