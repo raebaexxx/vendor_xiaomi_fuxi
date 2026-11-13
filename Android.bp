@@ -14461,3 +14461,16 @@ cc_prebuilt_binary {
     relative_install_path: "hw",
     device_specific: true,
 }
+
+android_app_import {
+    name: "EuiccGoogle",
+    owner: "xiaomi",
+    apk: "proprietary/product/priv-app/EuiccGoogle/EuiccGoogle.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
