@@ -603,6 +603,31 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-tgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-tgame.conf \
     vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-video.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-video.conf \
     vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-videochat.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-4k-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-4k-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-abnormal-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-abnormal-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-arvr-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-arvr-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-camera-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-camera-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-cclassvideo-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-cclassvideo-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-cgame-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-cgame-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-class0-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-class0-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-dolbyvision-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-dolbyvision-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-hp-mgame-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-hp-mgame-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-hp-normal-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-hp-normal-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-huanji-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-huanji-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-mgame-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-mgame-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-navigation-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-navigation-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-nolimits-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-nolimits-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-normal-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-normal-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-odm-map.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-odm-map.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-per-cclassvideo-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-cclassvideo-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-per-cgame-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-cgame-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-per-class0-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-class0-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-per-normal-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-normal-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-per-video-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-video-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-phone-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-phone-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-tgame-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-tgame-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-video-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-video-newcharger.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-videochat-newcharger.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-videochat-newcharger.conf \
     vendor/xiaomi/fuxi/proprietary/odm/firmware/B-cs35l41-dsp1-spk-cali.bin:$(TARGET_COPY_OUT_ODM)/firmware/B-cs35l41-dsp1-spk-cali.bin \
     vendor/xiaomi/fuxi/proprietary/odm/firmware/B-cs35l41-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_ODM)/firmware/B-cs35l41-dsp1-spk-prot.bin \
     vendor/xiaomi/fuxi/proprietary/odm/firmware/B-handfree.txt:$(TARGET_COPY_OUT_ODM)/firmware/B-handfree.txt \
